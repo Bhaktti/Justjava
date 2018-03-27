@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.android.justjava.MainActivity"
-    android:background="@drawable/androidcoffeeimage">
+    tools:context="com.example.android.justjava.MainActivity">
+
+    <EditText
+        android:id="@+id/edit_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edit Text"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Toppings"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black" />
+
+    <CheckBox
+        android:id="@+id/Whipped_Cream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whipped Cream"
+        android:textSize="16sp"
+        android:paddingLeft="24dp"
+        android:textAppearance="?android:textAppearanceMedium" />
+    <CheckBox
+        android:id="@+id/choclate_Toppings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choclate Toppings"
+        android:textSize="16sp"
+        android:paddingLeft="24dp"
+        android:textAppearance="?android:textAppearanceMedium" />
 
 
     <TextView
@@ -60,12 +97,12 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="8dp"
-        android:text="Price"
+        android:text="Order Summary"
         android:textAllCaps="true"
         android:textColor="@android:color/black" />
 
     <TextView
-        android:id="@+id/price_text_view"
+        android:id="@+id/order_summary_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -94,3 +131,5 @@
 
 
 </LinearLayout>
+
+</ScrollView>
